@@ -1,0 +1,8 @@
+prefix: '[GravityBoots] '
+disable-fall-damage: true
+toggle-message-enable: '&aYou have &2enabled &athe gravity.'
+toggle-message-disable: '&aYou have &cdisabled &athe gravity.'
+toggle-message-cooldown: '&cYour boots are in cooldown!'
+send-toggle-message: false
+enable-toggle-cooldown: false
+toggle-cooldown-time: 3

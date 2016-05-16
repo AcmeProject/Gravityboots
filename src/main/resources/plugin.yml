@@ -1,0 +1,7 @@
+name: GravityBoots
+version: 1.0
+author: LaxWasHere
+main: net.poweredbyhate.gravityboots.GravityBoots
+commands:
+  gravityboots:
+    aliases: [gb]
