@@ -57,11 +57,11 @@ public class GravityBoots extends JavaPlugin implements Listener {
                 }
                 if (p.hasPotionEffect(PotionEffectType.LEVITATION)) {
                     p.removePotionEffect(PotionEffectType.LEVITATION);
-                    toggleMessage(p, getConfig().getString("toggle-message-disable"));
+                    toggleMessage(p, getConfig().getString("toggle-message-enable"));
                     startCooldown(p.getUniqueId());
                 } else {
                     p.addPotionEffect(new PotionEffect(PotionEffectType.LEVITATION, getUniverse(), 1));
-                    toggleMessage(p, getConfig().getString("toggle-message-enable"));
+                    toggleMessage(p, getConfig().getString("toggle-message-disable"));
                     startCooldown(p.getUniqueId());
                 }
             }
