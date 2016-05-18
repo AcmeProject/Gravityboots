@@ -31,7 +31,9 @@ public class GravityBoots extends JavaPlugin implements Listener {
         setBoots();
         Bukkit.getPluginManager().registerEvents(this, this);
         getCommand("gravityboots").setExecutor(new GravityBootsCommand(this));
-        Bukkit.getServer().addRecipe(new ShapedRecipe(boots).shape("ooo","oxo","lel").setIngredient('x', Material.DIAMOND_BOOTS).setIngredient('l', Material.ENDER_PEARL).setIngredient('e', Material.NETHER_STAR));
+        if (getConfig().getBoolean("recipe")) {
+            Bukkit.getServer().addRecipe(new ShapedRecipe(boots).shape("ooo","oxo","lel").setIngredient('x', Material.DIAMOND_BOOTS).setIngredient('l', Material.ENDER_PEARL).setIngredient('e', Material.NETHER_STAR));
+        }
     }
 
     public void setBoots() {
